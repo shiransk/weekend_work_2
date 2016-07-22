@@ -9,6 +9,16 @@
 # constructor accordingly.
 
 class Yodel
+  attr_reader :segment , :count
+
+  def initialize(yodel)
+    @segment =yodel[:segment]
+    @count =yodel[:count]
+  end
+
+  def articulate
+    @segment * @count
+  end
 
 end
 
